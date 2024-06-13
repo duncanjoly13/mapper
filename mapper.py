@@ -15,7 +15,7 @@ except ValueError:
     dimension = 10
 
 filename = f"{city.replace(' ', '_')}_{color}_{dimension}x{dimension}.png"
-print(f"Generating plot of {city} in {color} with size {dimension}x{dimension} and saving to \x1B[3m{filename}\x1B[0m" +
+print(f"\nGenerating plot of {city} in {color} with size {dimension}x{dimension} and saving to \x1B[3m{filename}\x1B[0m" +
       "\nThis may take some time...")
 
 admin = ox.geocode_to_gdf(city)
